@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import authService from "../../services/authService"
 import Users from "../Users/Users"
 import HomePage from "../HomePage/HomePage"
+import AddStoryPage from "../AddStoryPage/AddStoryPage"
 import "./App.css";
 
 
@@ -35,6 +36,15 @@ class App extends Component {
           render={() => (
             <main>
              <HomePage user={user}/>
+            </main>
+          )}
+        />
+         <Route
+          exact
+          path="/addstory"
+          render={() => (
+            <main>
+             <AddStoryPage user={user}/>
             </main>
           )}
         />
