@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import * as blogsAPI from "../../services/blogsService"
 import "./StoriesPage.css"
 
-const StoriesPage = () => {
+function StoriesPage({user}) {
+    const [stories, setStories] = useState([])
     return ( 
         <>
-        <h1>Stories Page</h1>
+      
         </>
      );
 }
