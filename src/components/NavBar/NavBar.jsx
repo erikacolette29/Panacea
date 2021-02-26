@@ -13,6 +13,7 @@ const NavBar = ({ user, handleLogout }) => {
               <Link to='' className='nav-link' onClick={handleLogout}>Log Out</Link>
               <li><Link to="/" className="nav-link">Home</Link></li>
               <li><Link to="/blogs" className="nav-link">Stories</Link></li>
+              <li><Link to="/blogs" className="nav-link">Add Your Story</Link></li>
             </ul>
           </div>
         </nav>
