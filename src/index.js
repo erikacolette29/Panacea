@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./pages/App/App";
 import * as serviceWorker from "./serviceWorker";
 
+
 ReactDOM.render(
   <Router>
     <React.StrictMode>

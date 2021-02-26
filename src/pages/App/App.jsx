@@ -5,7 +5,9 @@ import Signup from "../Signup/Signup";
 import Login from "../Login/Login";
 import authService from "../../services/authService"
 import Users from "../Users/Users"
+import HomePage from "../HomePage/HomePage"
 import "./App.css";
+
 
 class App extends Component {
   state = {
@@ -32,7 +34,7 @@ class App extends Component {
           path="/"
           render={() => (
             <main>
-              <h1>Welcome. This is an authorization template.</h1>
+             <HomePage user={user}/>
             </main>
           )}
         />
