@@ -4,6 +4,7 @@ module.exports = {
 index,
 create,
 delete: deleteOne,
+update
 }
 
 function index(req,res){
@@ -21,6 +22,11 @@ function create(req,res){
 }
 function deleteOne(req,res){
     Blog.findByIdAndDelete(req.params.id)
+    .then(blog => {res.json(blog)})
+    .catch(err => {res.json(err)})
+}
+function update(req,res){
+    Blog.findByIdAndUpdate(req.params.id, req.body, {new:true})
     .then(blog => {res.json(blog)})
     .catch(err => {res.json(err)})
 }

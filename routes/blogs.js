@@ -8,6 +8,7 @@ router.get('/', blogsCtrl.index)
 router.use(require('../config/auth'));
 router.post('/', blogsCtrl.create)
 router.delete('/:id', blogsCtrl.delete)
+router.put('/:id', blogsCtrl.update)
 
 // function checkAuth(req, res, next) {
 // 	if (req.user) return next();
