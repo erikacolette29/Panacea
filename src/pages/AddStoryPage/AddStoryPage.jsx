@@ -1,19 +1,30 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useForm } from "../../hooks/useForm";
+import * as blogsAPI from "../../services/blogsService"
 import "./AddStoryPage.css"
 
-export default function AddStoryPage({ user, story, handleAddStory }) {
+export default function AddStoryPage(props) {
     const [invalidForm, setValidForm] = useState(true);
+    const formRef = useRef();
+
     const [state, handleChange] = useForm({
       title:"",
       content: "",
     });
 
-    const formRef = useRef();
+    async function handleAddStory(newStoryData){
+      await blogsAPI.create(newStoryData)
+      // history.push('/blogs')
+    }
 
     useEffect(() => {
         formRef.current.checkValidity() ? setValidForm(false) : setValidForm(true);
       }, [state]);
+
+      async function handleSubmit(e) {
+        e.preventDefault()
+        handleAddStory(state)
+      }
 
     return ( 
     <>

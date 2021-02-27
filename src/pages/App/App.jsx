@@ -52,9 +52,12 @@ class App extends Component {
          <Route
           exact
           path="/addstory"
-          render={() => (
+          render={({history}) => (
             <main>
-             <AddStoryPage user={user}/>
+             <AddStoryPage 
+             user={user}
+             history={history}
+             />
             </main>
           )}
         />
