@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as blogsAPI from "../../services/blogsService"
 import StoryCard from "../../components/StoryCard/StoryCard"
-import AddStoryPage from "../AddStoryPage/AddStoryPage"
 import "./StoriesPage.css"
 
 function StoriesPage(props, {user}) {

@@ -34,11 +34,7 @@ export default function AddStoryPage(props) {
         <form 
             autoComplete="off"
             ref={formRef}
-            onSubmit={(e) => {
-              e.preventDefault();
-              console.log(state, " this is state");
-              handleAddStory(state);
-            }}
+            onSubmit={handleSubmit}
           >
               <input
                 placeholder="title..."
