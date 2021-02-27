@@ -5,29 +5,44 @@ const NavBar = ({ user, handleLogout }) => {
     return (
     <>
       {user ?
-        <nav>
-          <div className="nav-wrapper">
-            <ul id="nav-mobile" className="right">
-              <li className="nav-link">Welcome, {user.name}</li>
-              <li><Link to="/users" className="nav-link">Users</Link></li>
-              <Link to='' className='nav-link' onClick={handleLogout}>Log Out</Link>
-              <li><Link to="/" className="nav-link">Home</Link></li>
-              <li><Link to="/blogs" className="nav-link">Stories</Link></li>
-              <li><Link to="/addstory" className="nav-link">Add Your Story</Link></li>
-            </ul>
-          </div>
-        </nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Panacea</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link"  href="/users">Users</a>
+        <a class="nav-link" href="/blogs">Stories</a>
+        <a class="nav-link" href="/addstory">Add Your Story</a>
+        <a class="nav-link" onClick={handleLogout}>Logout</a>
+       
+      </div>
+    </div>
+  </div>
+</nav>
       :
-        <nav>
-          <div className="nav-wrapper">
-            <ul id="nav-mobile" className="right">
-              <li><Link to="/login" className="nav-link">Log In</Link></li>
-              <li><Link to="/signup" className="nav-link">Sign Up</Link></li>
-              <li><Link to="/" className="nav-link">Home</Link></li>
-              <li><Link to="/blogs" className="nav-link">Stories</Link></li>
-            </ul>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">Panacea</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/login">Login</a>
+        <a class="nav-link" href="/signup">Sign Up</a>
+        <a class="nav-link" href="/blogs">Stories</a>
+       
+      </div>
+    </div>
+          
           </div>
-        </nav>
+          </nav>
+       
       }
     </>
   )
