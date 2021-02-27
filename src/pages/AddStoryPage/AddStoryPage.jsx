@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useForm } from "../../hooks/useForm";
+import { useHistory } from 'react-router-dom'
 import * as blogsAPI from "../../services/blogsService"
 import "./AddStoryPage.css"
 
 export default function AddStoryPage(props) {
+    const history = useHistory()
     const [invalidForm, setValidForm] = useState(true);
     const formRef = useRef();
 
@@ -14,7 +16,7 @@ export default function AddStoryPage(props) {
 
     async function handleAddStory(newStoryData){
       await blogsAPI.create(newStoryData)
-      // history.push('/blogs')
+      history.push('/blogs')
     }
 
     useEffect(() => {
