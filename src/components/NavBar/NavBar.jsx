@@ -14,8 +14,7 @@ const NavBar = ({ user, handleLogout }) => {
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link"  href="/users">Users</a>
-        <a class="nav-link" href="/blogs">Stories</a>
+        <a class="nav-link"  href="/about">About</a>
         <a class="nav-link" href="/addstory">Add Your Story</a>
         <a class="nav-link" onClick={handleLogout}>Logout</a>
        
@@ -35,7 +34,7 @@ const NavBar = ({ user, handleLogout }) => {
       <div class="navbar-nav">
         <a class="nav-link" href="/login">Login</a>
         <a class="nav-link" href="/signup">Sign Up</a>
-        <a class="nav-link" href="/blogs">Stories</a>
+       
        
       </div>
     </div>

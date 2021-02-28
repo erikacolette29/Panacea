@@ -3,22 +3,22 @@ import "./StoryCard.css";
 
 const StoryCard = ({ user, story, handleDeleteStory }) => {
   return (
-    <>
-      <h1>{story.title}</h1>
-      <p>{story.content}</p>
-    
-        <>
-          <button
-            type="submit"
-            className="btn red"
-            onClick={() => handleDeleteStory(story._id)}
-          >
-            Delete Story
-          </button>
-        </>
-       
+   
 
-    </>
+      <div className="box">
+        <h2>{story.title}</h2>
+        <p>{story.content}</p>
+        <button
+        type="submit"
+        className="btn btn-light"
+        onClick={() => handleDeleteStory(story._id)}
+      >
+        Delete Story
+      </button>
+      </div>
+
+     
+  
   );
 };
 
