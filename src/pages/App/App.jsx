@@ -7,6 +7,8 @@ import authService from "../../services/authService"
 import About from "../About/About"
 import StoriesPage from "../StoriesPage/StoriesPage"
 import AddStoryPage from "../AddStoryPage/AddStoryPage"
+import StoriesDetails from "../StoriesDetails/StoriesDetails"
+import EditStory from "../EditStory/EditStoryPage"
 import "./App.css";
 
 
@@ -39,6 +41,26 @@ class App extends Component {
             </main>
           )}
         />
+         <Route 
+          exact path='/details'
+          render={( {location} ) => 
+            <StoriesDetails 
+              location={location}
+            />  
+          }
+        />
+        <Route 
+          exact path='/edit'
+          render={() => 
+            authService.getUser() ?
+            <EditStory
+              user={user}
+            />
+            :
+            <Redirect to='/login' />
+          }
+          />
+        
          <Route
           exact
           path="/addstory"

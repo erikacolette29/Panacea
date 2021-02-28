@@ -3,6 +3,7 @@ import * as blogsAPI from "../../services/blogsService";
 import { useHistory } from "react-router-dom";
 import StoryCard from "../../components/StoryCard/StoryCard";
 import "./StoriesPage.css";
+import { Link } from "react-router-dom";
 
 function StoriesPage({ user }) {
   const [stories, setStories] = useState([]);
@@ -36,14 +37,21 @@ function StoriesPage({ user }) {
       {stories.length ? (
         <>
           {stories.map((story) => (
-            <>
+            <Link
+            to={{
+              pathname: '/details',
+              state: { story }
+             
+            }}
+          >
               <StoryCard
                 user={user}
                 story={story}
                 handleDeleteStory={handleDeleteStory}
                 key={story._id}
               />
-            </>
+                
+            </Link> 
           ))}
         </>
       ) : (
