@@ -1,0 +1,26 @@
+.main-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 40px;
+    
+}
+
+.main-title{
+font-size: 4rem;
+}
+
+.pen-pic{
+    height: 100px;
+    width: 60%;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-flow: row wrap;
+}

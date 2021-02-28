@@ -4,8 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Signup from "../Signup/Signup";
 import Login from "../Login/Login";
 import authService from "../../services/authService"
-import Users from "../Users/Users"
-import HomePage from "../HomePage/HomePage"
+import About from "../About/About"
 import StoriesPage from "../StoriesPage/StoriesPage"
 import AddStoryPage from "../AddStoryPage/AddStoryPage"
 import "./App.css";
@@ -34,15 +33,6 @@ class App extends Component {
         <Route
           exact
           path="/"
-          render={() => (
-            <main>
-             <HomePage user={user}/>
-            </main>
-          )}
-        />
-        <Route
-          exact
-          path="/blogs"
           render={() => (
             <main>
              <StoriesPage user={user}/>
@@ -82,9 +72,9 @@ class App extends Component {
           )}
         />
         <Route
-         exact path="/users"
+         exact path="/about"
         render={() =>
-        user ? <Users /> : <Redirect to="/login" />
+        user ? <About /> : <Redirect to="/login" />
         }
         />
       </>

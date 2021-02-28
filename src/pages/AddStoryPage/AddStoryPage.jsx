@@ -16,7 +16,7 @@ export default function AddStoryPage(props) {
 
     async function handleAddStory(newStoryData){
       await blogsAPI.create(newStoryData)
-      history.push('/blogs')
+      history.push('/')
     }
 
     useEffect(() => {
@@ -30,6 +30,7 @@ export default function AddStoryPage(props) {
 
     return ( 
     <>
+    <h1>Add Your Story</h1>
       
         <form 
             autoComplete="off"

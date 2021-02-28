@@ -11,7 +11,7 @@ function StoriesPage({ user }) {
   async function handleDeleteStory(id) {
     await blogsAPI.deleteOne(id);
     setStories(stories.filter((s) => s._id !== id));
-    history.push("/blogs");
+    history.push("/");
   }
 
   useEffect(() => {
@@ -24,6 +24,15 @@ function StoriesPage({ user }) {
 
   return (
     <>
+    <div className="main-title-container">
+    <h1 className="main-title">Panacea</h1>
+    <img className="pen-pic"src="/images/pen.jpg" alt="pen-pic"/>
+    </div>
+
+   
+ 
+    <div className="container">
+
       {stories.length ? (
         <>
           {stories.map((story) => (
@@ -40,6 +49,7 @@ function StoriesPage({ user }) {
       ) : (
         <p>no Stories</p>
       )}
+      </div>
     </>
   );
 }
