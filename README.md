@@ -10,9 +10,10 @@ Trello board: https://trello.com/b/jaXU9JKT/covid-stories
 ## Screenshots
 
 ### Wireframes
-![wireframe](static/../main_app/static/images/wireframe.png)
+![wireframe](/public/images/wireframe.png)
 
-### 
+### ERD
+![erd](public/images/erd.png)
 
 
 
