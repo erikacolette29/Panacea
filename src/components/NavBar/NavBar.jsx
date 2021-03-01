@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import "./NavBar.css"
 
 const NavBar = ({ user, handleLogout }) => {
     return (
@@ -8,7 +9,7 @@ const NavBar = ({ user, handleLogout }) => {
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Panacea</a>
+    <a class="navbar-brand" href="/"><img className="pen-icon" src="/images/quill.png" alt=""/></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

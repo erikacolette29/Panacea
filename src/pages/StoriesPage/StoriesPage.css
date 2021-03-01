@@ -1,21 +1,29 @@
+/* .background{
+    background-color: rgb(89, 211, 211);
+} */
+
 .main-title-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     margin: 40px;
+  
     
 }
 
+.pen{
+  height: 80px;
+  margin-left: 25px;
+  margin-bottom: 35px;
+}
 .main-title{
-font-size: 4rem;
+font-size: 5rem;
+letter-spacing: 3px;
+font-family: 'Bellefair', serif;
 }
 
-.pen-pic{
-    height: 100px;
-    width: 60%;
 
-}
 
 /* Boxes container */
 .container{
@@ -24,6 +32,7 @@ font-size: 4rem;
     align-items: center;
     gap: 20px;
     flex-flow: row wrap;
+   
 }
 
 a{

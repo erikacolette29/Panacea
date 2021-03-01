@@ -25,11 +25,15 @@ function StoriesPage({ user }) {
 
   return (
     <>
+    <div className="background">
     <div className="main-title-container">
-    <h1 className="main-title">Panacea</h1>
-    <img className="pen-pic"src="/images/pen.jpg" alt="pen-pic"/>
-    </div>
+  
 
+    
+    <h1 className="main-title">Panacea</h1>
+    <img className="pen" src="/images/quill.png" alt=""/>
+    </div>
+  
    
  
     <div className="container">
@@ -57,6 +61,7 @@ function StoriesPage({ user }) {
       ) : (
         <p>no Stories</p>
       )}
+      </div>
       </div>
     </>
   );
