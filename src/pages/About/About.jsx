@@ -6,12 +6,12 @@ const About = () => {
   return ( 
     <>
     <div className="about-container">
-    <h1 className="about-heading">What is Panacea?</h1>
+    <h1 className="about-heading">What is <strong>Panacea?</strong></h1>
     <p className="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum, cumque iure perspiciatis tenetur facilis illum iste perferendis ad minus architecto, labore reiciendis pariatur dolor ducimus blanditiis neque? Dolores, alias?</p>
     </div>
 
     <div className="team-heading-container">
-    <h2 className="team-heading">The Team</h2>
+    <h2 className="team-heading">Meet The Team</h2>
     </div>
 
     <div className="erika-container">

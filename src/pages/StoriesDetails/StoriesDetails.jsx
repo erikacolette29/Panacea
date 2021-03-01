@@ -14,8 +14,10 @@ const [story, setStory]= useState(location.state.s)
   return (
     <>
       <h1>Detail Page</h1>
-<p>{story.title}</p>
-<p>{story.content}</p>
+      <div className="box">
+        <p>{story.title}</p>
+        <p>{story.content}</p>
+      </div>
 
       <Link
         className="btn btn-warning"
