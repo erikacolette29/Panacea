@@ -28,3 +28,18 @@ export function create(story) {
     }, {mode: 'cors'})
     .then(res => res.json())
   }
+
+  export function update(story) {
+    return fetch(
+      `${BASE_URL}/${story._id}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+          Authorization: "Bearer " + tokenService.getToken(),
+        },
+        body: JSON.stringify(story),
+      },
+      { mode: "cors" }
+    ).then((res) => res.json());
+  }

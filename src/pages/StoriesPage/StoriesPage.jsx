@@ -5,23 +5,17 @@ import StoryCard from "../../components/StoryCard/StoryCard";
 import "./StoriesPage.css";
 import { Link } from "react-router-dom";
 
-function StoriesPage({ user }) {
-  const [stories, setStories] = useState([]);
-  const history = useHistory();
+function StoriesPage({ user, story, handleDeleteStory }) {
+  // const [stories, setStories]= useState([])
 
-  async function handleDeleteStory(id) {
-    await blogsAPI.deleteOne(id);
-    setStories(stories.filter((s) => s._id !== id));
-    history.push("/");
-  }
 
-  useEffect(() => {
-    (async function () {
-      const allStories = await blogsAPI.getAll();
-      console.log(allStories);
-      setStories(allStories);
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async function () {
+  //     const allStories = await blogsAPI.getAll();
+  //     console.log(allStories);
+  //     setStories(allStories);
+  //   })();
+  // }, []);
 
   return (
     <>
@@ -35,21 +29,21 @@ function StoriesPage({ user }) {
  
     <div className="container">
 
-      {stories.length ? (
+      {story.length ? (
         <>
-          {stories.map((story) => (
+          {story.map((s) => (
             <Link
             to={{
-              pathname: '/details',
-              state: { story }
+              pathname: `/details/${s._id}`,
+              state: {s}
              
             }}
           >
               <StoryCard
                 user={user}
-                story={story}
-                handleDeleteStory={handleDeleteStory}
-                key={story._id}
+                story={s}
+                handleDeleteStory={handleDeleteStory }
+                key={s._id}
               />
                 
             </Link> 
