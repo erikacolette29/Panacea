@@ -7,7 +7,7 @@ const StoryCard = ({ user, story, handleDeleteStory }) => {
 
       <div className="box">
         <h2>{story.title}</h2>
-        <p>{story.content}</p>
+        <p className="content">{story.content}</p>
         
         <div>
 

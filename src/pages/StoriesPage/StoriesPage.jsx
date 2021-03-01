@@ -27,9 +27,6 @@ function StoriesPage({ user }) {
     <>
     <div className="background">
     <div className="main-title-container">
-  
-
-    
     <h1 className="main-title">Panacea</h1>
     <img className="pen" src="/images/quill.png" alt=""/>
     </div>

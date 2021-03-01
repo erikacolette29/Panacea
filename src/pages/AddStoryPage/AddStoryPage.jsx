@@ -40,6 +40,7 @@ export default function AddStoryPage(props) {
               <input
                 placeholder="title..."
                 name="title"
+                maxlength="20"
                 value={state.title}
                 onChange={handleChange}
                 required
@@ -47,6 +48,7 @@ export default function AddStoryPage(props) {
               <input
                 placeholder="write a story ..."
                 name="content"
+                maxlength="200"
                 value={state.content}
                 onChange={handleChange}
                 required
@@ -56,7 +58,7 @@ export default function AddStoryPage(props) {
                     type="submit"
                     disabled={invalidForm}
                   >
-                    ADD
+                    Publish
                   </button>
                 </span>
 

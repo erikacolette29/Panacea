@@ -7,6 +7,8 @@ const StoriesDetails = ({ story }) => {
     <>
       <h1>Detail Page</h1>
 
+
+
       <Link
         className="btn btn-warning"
         to={{
