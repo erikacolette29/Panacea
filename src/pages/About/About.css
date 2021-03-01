@@ -49,8 +49,8 @@
 
 .name-text-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    align-items: flex-start;
     flex-flow: column wrap;
     /* background-color: green; */
     width: 500px;
@@ -77,11 +77,14 @@
 
 .name-text-container2{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    align-items: flex-end;
     flex-flow: column wrap;
     /* background-color: green; */
     width: 500px;
     margin-right: 50px;
     margin-bottom: 30px;
+}
+.p-text-soph{
+    text-align:right;
 }

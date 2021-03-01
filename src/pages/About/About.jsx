@@ -26,7 +26,7 @@ const About = () => {
    
     <div className="name-text-container2">
     <h3>Sophia Seremetis </h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum qui, provident aperiam, autem quia officia blanditiis incidunt non ab excepturi sequi adipisci, vitae animi magni eligendi inventore sunt quisquam quas.</p>
+    <p className="p-text-soph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum qui, provident aperiam, autem quia officia blanditiis incidunt non ab excepturi sequi adipisci, vitae animi magni eligendi inventore sunt quisquam quas.</p>
     </div>
     <img className="sophia-pic"src="/images/sophia.jpeg" alt="sophia-pic"/>
     </div>
