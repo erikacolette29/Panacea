@@ -1,0 +1,87 @@
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 50px;
+    padding: 10px;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.about-heading{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-text{
+    width: 50%;
+    text-align: center;
+}
+
+.team-heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 10px;
+    /* background-color: red; */
+   
+}
+.team-heading{
+    font-size: 2.5rem;
+   
+}
+
+
+.erika-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: row wrap;
+    /* background-color: blueviolet; */
+    padding-left: 300px;
+    padding-top: 50px;
+    
+}
+
+.eri-pic{
+    border-radius: 50%;
+}
+
+.name-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    /* background-color: green; */
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 30px;
+   
+}
+
+
+
+.sophia-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+    /* background-color: rgb(43, 205, 226); */
+    padding: 50px 300px 50px 0;
+    
+}
+
+.sophia-pic{
+    border-radius: 50%;
+}
+
+.name-text-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    /* background-color: green; */
+    width: 500px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}

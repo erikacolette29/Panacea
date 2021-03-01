@@ -17,10 +17,16 @@ font-size: 4rem;
 
 }
 
+/* Boxes container */
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-flow: row wrap;
+}
+
+a{
+    color: black;
+    text-decoration: none;
 }
