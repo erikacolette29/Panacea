@@ -1,0 +1,35 @@
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 500px;
+    width:auto;
+    /* border: black solid 2px; */
+    box-shadow: 5px 6px rgba(151, 146, 114, 0.719);
+    background-color: rgb(248, 241, 227);
+    font-family: 'Bellefair', serif;
+    /* overflow:auto; */
+    padding: 40px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: initial;
+    margin: 30px 50px 30px;
+  text-align: center;
+}
+
+.title-text{
+    font-size: 4rem;
+    border-bottom: 2px black solid;
+    margin-bottom: 50px;
+}
+
+.content-text{
+    font-size: 3rem;
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

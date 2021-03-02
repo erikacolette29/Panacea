@@ -1,0 +1,15 @@
+.f-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+.f-form1{
+  
+    width: 500px;
+   
+ 
+  
+}

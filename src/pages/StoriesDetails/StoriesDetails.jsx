@@ -13,12 +13,12 @@ const [story, setStory]= useState(location.state.s)
 
   return (
     <>
-      <h1>Detail Page</h1>
-      <div className="box">
-        <p>{story.title}</p>
-        <p>{story.content}</p>
+      <div className="box2">
+        <p className="title-text">{story.title}</p>
+        <p className="content-text">{story.content}</p>
       </div>
 
+<div className="link-container">
       <Link
         className="btn btn-warning"
         to={{
@@ -28,6 +28,7 @@ const [story, setStory]= useState(location.state.s)
       >
         Edit Story
       </Link>
+      </div>
     </>
   );
 };

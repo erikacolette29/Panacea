@@ -31,13 +31,16 @@ export default function AddStoryPage(props) {
     return ( 
     <>
     <h1>Add Your Story</h1>
-      
-        <form 
+
+  
+   <div className="f-container">
+        <form className="f-form1"
             autoComplete="off"
             ref={formRef}
             onSubmit={handleSubmit}
           >
-              <input
+              <div class="col-sm-12">
+              <input class="form-control"
                 placeholder="title..."
                 name="title"
                 maxlength="20"
@@ -45,7 +48,9 @@ export default function AddStoryPage(props) {
                 onChange={handleChange}
                 required
               />
-              <input
+               </div>
+               <div class="col-md-12">
+              <textarea class="form-control" 
                 placeholder="write a story ..."
                 name="content"
                 maxlength="200"
@@ -53,6 +58,8 @@ export default function AddStoryPage(props) {
                 onChange={handleChange}
                 required
               />
+              </div>
+             
               <span class="input-group-btn">
                   <button
                     type="submit"
@@ -63,6 +70,7 @@ export default function AddStoryPage(props) {
                 </span>
 
                 </form>
+                </div>
           </>  
       
      );
