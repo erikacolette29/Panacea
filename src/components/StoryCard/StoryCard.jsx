@@ -5,7 +5,7 @@ const StoryCard = ({ user, story, handleDeleteStory }) => {
   return (
     
 
-      <div className="box">
+      <div className="box shadow p-3 mb-5 rounded">
         <h2>{story.title}</h2>
         {/* <p className="content">{story.content}</p> */}
         

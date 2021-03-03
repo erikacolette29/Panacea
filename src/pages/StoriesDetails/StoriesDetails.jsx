@@ -13,7 +13,7 @@ const [story, setStory]= useState(location.state.s)
 
   return (
     <>
-      <div className="box2">
+      <div className="box2 shadow p-3 mb-5 rounded">
         <p className="title-text">{story.title}</p>
         <p className="content-text">{story.content}</p>
       </div>
