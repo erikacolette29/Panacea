@@ -5,3 +5,14 @@
   align-items: center;
   margin-bottom: 50px;
 }
+
+
+.f-container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-form2{
+  width: 700px;
+}

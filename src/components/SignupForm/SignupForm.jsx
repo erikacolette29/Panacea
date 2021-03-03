@@ -39,8 +39,10 @@ class SignupForm extends Component {
     return (
       <div>
         <h3>Sign Up</h3>
-        <form autoComplete="off" onSubmit={this.handleSubmit}>
-          <input
+        <div className="f-container">
+        <form autoComplete="off" onSubmit={this.handleSubmit} className="f-form2">
+        <div class="col-sm-7">
+          <input class="form-control" placeholder="Name..."
             type="text"
             autoComplete="off"
             id="name"
@@ -48,8 +50,9 @@ class SignupForm extends Component {
             name="name"
             onChange={this.handleChange}
           />
-          <label htmlFor="name">Name</label>
-          <input
+          </div>
+          <div class="col-sm-7">
+          <input class="form-control" placeholder="Email..."
             type="text"
             autoComplete="off"
             id="email"
@@ -57,8 +60,9 @@ class SignupForm extends Component {
             name="email"
             onChange={this.handleChange}
           />
-          <label htmlFor="email">Email</label>
-          <input
+       </div>
+       <div class="col-sm-7">
+          <input class="form-control" placeholder="Password..."
             type="password"
             autoComplete="off"
             id="password"
@@ -66,8 +70,9 @@ class SignupForm extends Component {
             name="password"
             onChange={this.handleChange}
           />
-          <label htmlFor="password">Password</label>
-          <input
+        </div>
+        <div class="col-sm-7">
+          <input class="form-control" placeholder="Confirm Password..."
             type="password"
             autoComplete="off"
             id="confirm"
@@ -75,11 +80,13 @@ class SignupForm extends Component {
             name="passwordConf"
             onChange={this.handleChange}
           />
-          <label htmlFor="confirm">Confirm Password</label>
-          <button disabled={this.isFormInvalid()}>Sign Up</button>
+          </div>
+         
+          <button className="btn btn-light" disabled={this.isFormInvalid()}>Sign Up</button>
           &nbsp;&nbsp;
-          <Link to="/">Cancel</Link>
+          <Link className="btn btn-light" to="/">Cancel</Link>
         </form>
+      </div>
       </div>
     );
   }

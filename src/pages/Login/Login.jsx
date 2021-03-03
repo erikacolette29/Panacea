@@ -36,8 +36,10 @@ class LoginPage extends Component {
     return (
       <main className="Login">
         <h3>Log In</h3>
-        <form autoComplete="off" onSubmit={this.handleSubmit}>
-          <input
+        <div className="f-container">
+        <form autoComplete="off" onSubmit={this.handleSubmit} className="f-form2">
+        <div class="col-sm-9">
+          <input class="form-control" placeholder="Email..."
             type="text"
             autoComplete="off"
             id="email"
@@ -45,8 +47,9 @@ class LoginPage extends Component {
             name="email"
             onChange={this.handleChange}
           />
-          <label htmlFor="email">Email</label>
-          <input
+          </div>
+           <div class="col-sm-9">
+          <input  class="form-control"  placeholder="Password..."
             type="password"
             autoComplete="off"
             id="password"
@@ -54,12 +57,14 @@ class LoginPage extends Component {
             name="pw"
             onChange={this.handleChange}
           />
-          <label htmlFor="password">Password</label>
-          <button className="btn green">Log In</button>&nbsp;&nbsp;&nbsp;
-          <Link className="btn red" to="/">
+          </div>
+         
+          <button className="btn btn-light">Log In</button>&nbsp;&nbsp;&nbsp;
+          <Link className="btn btn-light" to="/">
             Cancel
           </Link>
         </form>
+        </div>
         <p>{this.state.message}</p>
       </main>
     );
