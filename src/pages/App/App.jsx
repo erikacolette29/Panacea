@@ -84,6 +84,7 @@ async function handleLogout() {
           exact path='/details/:id'
           render={( {location} ) => 
             <StoriesDetails 
+              user={user}
               location={location}
               handleDeleteStory ={handleDeleteStory}
               story={stories}
