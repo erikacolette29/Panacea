@@ -30,7 +30,7 @@ export default function AddStoryPage(props) {
 
     return ( 
     <>
-    <h1>Add Your Story</h1>
+    <h1 className="header">Add Your Story</h1>
 
   
    <div className="f-container">
@@ -62,6 +62,7 @@ export default function AddStoryPage(props) {
              
               <span class="input-group-btn">
                   <button
+                   className="btn btn-outline-dark"
                     type="submit"
                     disabled={invalidForm}
                   >
